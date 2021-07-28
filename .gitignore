@@ -1,3 +1,11 @@
+out/
+out
+/out
+out/*
+.idea
+*.iml
+*.kotlin_module
+
 # Compiled class file
 *.class
 
