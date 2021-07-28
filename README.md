@@ -2,7 +2,7 @@
 Placing distinction on writing high quality code. Not good enough to just produce the correct output, but code that is easy to maintain, properly cohesive and loosely coupled.
 
 ### Structure
-* Overview of DP
+* Overview of Design Pattern (DP)
 * Benefits of DP (why use DP?)
 * Types of DP: Each identifies a subset of pattern that can be used to solve specific problems
     * Creational - creating instances of objects
