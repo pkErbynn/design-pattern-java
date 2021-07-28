@@ -1,7 +1,7 @@
 # Design Pattern w/ Java
 Placing distinction on writing high quality code. Not good enough to just produce the correct output, but code that is easy to maintain, properly cohesive and loosely coupled.
 
-###Structure
+### Structure
 * Overview of DP
 * Benefits of DP (why use DP?)
 * Types of DP: Each identifies a subset of pattern that can be used to solve specific problems
@@ -47,10 +47,10 @@ Placing distinction on writing high quality code. Not good enough to just produc
     * Strategy
     * Template Method
     * Visitor 
-* Include
+* Includes...
     * organization around theory
-    * the why behing
-    * ...and many demonstrations (hands on coding)
+    * the why behind and
+    * many demonstrations (hands on coding)
 * Outcome
     * understand the fundamentals of DPs
     * create Java apps that use DPs
