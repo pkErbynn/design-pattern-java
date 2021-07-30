@@ -77,3 +77,15 @@ They are standard solutions provides to recurring and common design problems.
     * in Australia, who was a building architect   
     * had no computer programming skills in writing software
 * He said, "Each pattern describes a problem which occurs over and over again in our environment, and then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing it the same way twice" (Alexander)
+* In 1994-1995, the "Gang of four" applied Alexander's concepts to software development
+    * Gang - Enrich Gamma, Richard Helm, Ralph Johnson and John Vlissides
+    * they came up with the 23 design patterns   
+    * expressed solutions in terms of Objects and Interfaces instead of Walls and Doors (from architect view)
+    * applied the idea of patterns to software and called it Design Patterns
+    * published a book "Design Patterns - Elements of Reusable Object-Oriented Software (Addison Wesley, 1995)"
+    * they did not create these patterns described in the book - they documented them
+* the 4 essential elements
+    * pattern name to describe it 
+    * solve problem
+    * provide solution - not implementation specific (cus it works with other languages)  
+    * consequences - result on space, memory, performance, trade-offs
