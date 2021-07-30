@@ -58,3 +58,10 @@ Placing distinction on writing high quality code. Not good enough to just produc
     * learn how to write high quality Java code - modular, high cohesion and low coupling
     * become proficient in basic design principles
     * enjoy & have fun!
+    
+### Overview
+* There things we do in our daily routine that we can recognize that it gets repeated all the time. Let's call it Routine/Pattern.
+* Similarly, in the Software community certain solutions to a problem gets repeated and are addressed in a particular standard  way. Let's call it Design Pattern.
+* Design Patterns are aimed towards Object-Oriented programming languages
+* Helps design OO software and reusable OO software
+* Design Patterns also provide a standard and direction in solving a common software problem 
