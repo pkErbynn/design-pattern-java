@@ -64,4 +64,16 @@ Placing distinction on writing high quality code. Not good enough to just produc
 * Similarly, in the Software community certain solutions to a problem gets repeated and are addressed in a particular standard  way. Let's call it Design Pattern.
 * Design Patterns are aimed towards Object-Oriented programming languages
 * Helps design OO software and reusable OO software
-* Design Patterns also provide a standard and direction in solving a common software problem 
+* Design Patterns also provide a standard and direction in solving a common software problem
+* Design Patters _are recurring solutions to redesign problems that you see over and over. - [SmallTalk Companion]_. 
+They are standard solutions provides to recurring and common design problems.
+* They represent the best practices that are used by experienced object-oriented software developers 
+    * to solve general/common problems that the software developers face during software development
+    * and these software solutions has been tried and tested over substantial period of time
+    * not just only about the design of object but also involves the interaction of objects
+
+#### History
+* The concept of design pattern originated from Christopher Wolfgang Alexander
+    * in Australia, who was a building architect   
+    * had no computer programming skills in writing software
+* He said, "Each pattern describes a problem which occurs over and over again in our environment, and then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing it the same way twice" (Alexander)
