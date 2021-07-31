@@ -1,5 +1,6 @@
 # Design Pattern w/ Java
 Placing distinction on writing high quality code. Not good enough to just produce the correct output, but code that is easy to maintain, properly cohesive and loosely coupled.
+Instructor: Jason Fedin
 
 ### Structure
 * Overview of Design Pattern (DP)
@@ -89,3 +90,15 @@ They are standard solutions provides to recurring and common design problems.
     * solve problem
     * provide solution - not implementation specific (cus it works with other languages)  
     * consequences - result on space, memory, performance, trade-offs
+
+#### Advantages
+* uses the best solutions for certain problem faced during software development
+    * reusable software
+    * unexperienced devs learn software design easily and faster
+    * avoids reinventing the wheel 
+* helps understand OOP principles to achieve high quality code design
+    * encapsulation, inheritance, polymorphism 
+* improves ind'l and team communications by establishing a common terminology/platform
+* gives a higher perspective on a problem
+    * shift the level of thinking to a higher perspective
+* improves modifiability and maintainability
