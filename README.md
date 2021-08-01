@@ -102,3 +102,78 @@ They are standard solutions provides to recurring and common design problems.
 * gives a higher perspective on a problem
     * shift the level of thinking to a higher perspective
 * improves modifiability and maintainability
+
+### Types of Design Patterns
+There 23 Patterns differ at levels of granularity, abstraction and how they relate to one another
+* some patterns often used together - Composite and Iterator/Visitor
+* some patterns are alternatives - Prototype and Abstract Factory
+* similar designs but different intents - Composite and Decorator
+
+Grouped into 3 main types. Organized by their purpose (Gang of four)
+1. **Structural**: deal with the composition of classes or objects 
+2. **Creational**:  concern the process of object creation
+3. **Behavioral**: the way objects/classes interact, relate with one other, and distribute responsibility.
+_[Flow-tip]: structure class, create object, control its behavior_
+
+Organization by Scope (whether classes or objects)
+1. **Class Patterns**: applies to relationship between classes and their subs. These relationships are established through _inheritance_.
+2. **Object Patterns**: applies to relationship between objects. Can be changed at runtime making them more dynamic. Describes how objects can be composed into larger structures through object _composition_ and polymorphism.   
+
+#### Creational Patterns
+* Provides a way to create objects. In Java, the _new_ operator is used. 
+`erbynn = new Erbynn()`
+* But in creational design patterns, abstraction concept is used in the instantiation process. What's even abstraction?
+    * hiding details, ie the creation logic is hidden
+    * encapsulates the knowledge about which concrete class is used
+    * programmer calls a method or use another object, rather than instantiating objects directly using the _new_ operator
+* all that the system at large knows the objects is, their interfaces as defined by abstract classes
+    * informs what get created, who creates it, how and when it gets created   
+    * interface and abstract classes are used interchangeably.
+        * similarly, both aren't instantiatable
+        * by contrast, abstract has properties but interface doesn't, abstract has default behaviours whilst interface may not have (Java 11 allows).
+* They could be 
+    * competitors - either Prototype or Abstract Factory could be used profitably
+    * complementary - Builder can use other patterns, Prototype can use Singleton in its implementation 
+* Made of **5 patterns**: 
+    1. Builder
+    2. Prototype, 
+    3. Factory
+    4. Abstract Factory
+    5. Singleton
+
+#### Structural Patterns
+* describes how classes and objects can be combined into larger form. 
+    * ways to assemble objects 
+    * usually uses _interfaces_
+* deals with class and object composition
+    * eg. Composite design pattern deals with how to build classes hierarchy made of 2 kinds of objects
+* Made of **7 patterns**: 
+    1. Adaptor
+    2. Bridge
+    3. Composition
+    4. Decorator (Sub-classing)
+    5. Facade
+    6. Flyweight
+    7. Proxy
+
+#### Behavioural Patterns
+* describes communication between objects
+    * involves complex control flow that is difficult to follow at run-time
+    * helps put focus on how objects are interconnected than the control flow
+        * eg. Iteration of items
+* concerned with algorithms and which object is assigned a task
+    * behavioral class patterns uses _inheritance_ to describe algorithms and flow of control
+    * behavioral object patterns uses _composition_ to describe how group of objects cooperate to perform a single task that no single object can do it alone
+* terms: loosely coupled => less dependencies, easy to maintain, change to one doesn't affect another...cohesive => relate to responsibility, focus of an object. highly cohesive object is one with many responsibilities/doing too many things. difficult to modify, fix bug and maintain 
+* made  of **11 patterns**:
+    1. Chain of Responsibility
+    2. Command
+    3. Interpreter
+    4. Iterator
+    5. Mediator
+    6. Memento
+    7. Observer
+    8. State
+    9. Strategy
+    10. Template Method
+    11. Visitor
