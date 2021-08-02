@@ -248,7 +248,7 @@ improved;
 animal = getAnimal();
 animal.makeSound()
 ```
-> actual animal subtype is unknown 
+> actual animal subtype(Dog) is encapsulated, hidden, unknown
 
 Abstract Classes Vs Interfaces
 * interface variables are public static final. abstract can be private and protected too
