@@ -177,3 +177,35 @@ Organization by Scope (whether classes or objects)
     9. Strategy
     10. Template Method
     11. Visitor
+    
+#### Selecting and Using Design Patterns
+
+#### Principles and Strategies of Design
+Design patterns use these principles. Helps understand design patterns
+
+##### Design Smells
+They are structures in the design that violate the fundamental design principles which negatively affect design quality.
+Need to be aware of design smells while following design principles.
+Common characteristics of design smells includes;
+* Rigidity
+    * difficulty to change software
+    * a change affect other subsequent change in dependency module (tightly coupled)
+* Fragile
+    * a single change breaks other places
+    * extensibility causes a likelihood of introducing unexpected problems
+* Immobility
+    * parts that could be used in other systems cannot be separated from the original
+* Viscosity
+    * a design preserving change is more difficult to use than a hack
+* Needless repetition
+    * copy and pasting code through the system
+* Opaque 
+    * when code is not written in a clear and expressive manner
+    * difficult to understand
+* Needless complexity
+    * striving for perfection causing over designing and making code more complex
+    * quality design is lightweight, flexible, easy to read, understandable and modifiable
+
+Focus: to achieve **highly cohesive (responsibility)** and **loosely coupled (dependency)** design, code and solution.
+
+DESIGN PATTERS ARE AWESOME!...since they solve the above problems and ensure high quality design in application
