@@ -180,10 +180,11 @@ Organization by Scope (whether classes or objects)
     
 #### Selecting and Using Design Patterns
 
-#### Principles and Strategies of Design
+### Principles and Strategies of Design
+#### Overview
 Design patterns use these principles. Helps understand design patterns
 
-##### Design Smells
+#### Design Smells
 They are structures in the design that violate the fundamental design principles which negatively affect design quality.
 Need to be aware of design smells while following design principles.
 Common characteristics of design smells includes;
@@ -209,3 +210,51 @@ Common characteristics of design smells includes;
 Focus: to achieve **highly cohesive (responsibility)** and **loosely coupled (dependency)** design, code and solution.
 
 DESIGN PATTERS ARE AWESOME!...since they solve the above problems and ensure high quality design in application
+
+#### Programming to an Interface
+Simply means programming to a super type.
+* variables not instantiated on a particular concrete class
+* always program for an interface and not the actual implementation
+* client (caller) need not to know the specific types of object and the class that implement these objects
+* reduces implementation dependencies between subsystems
+* interface types (eg. IAnimal) can be used on
+    * variable types
+    * method return types
+    * method parameter types
+* **polymorphism** makes it possible to program to supertypes (interfaces)
+
+##### Polymorphism
+Recall: Abstract class Animal having two concrete implementations, Cat and Dog <br>
+Program to an implementation; 
+```java
+Dog doga = new Dog();
+doga.bark();
+``` 
+> Forces to code to a concrete implementation. 
+> Doesn't hide concrete implementation.
+
+Program to an interface/supertype
+```java
+Animal animal = new Dog();
+animal.makeSound();
+```
+> better, rather than hardcoding the instantiation of the subtype(new Dog() on the left side).
+> calls method in abstract class.
+> animal reference used polymorphically.
+> assigns the concrete implementation of the object at runtime.
+
+improved;
+```java
+animal = getAnimal();
+animal.makeSound()
+```
+> actual animal subtype is unknown 
+
+Abstract Classes Vs Interfaces
+* interface variables are public static final. abstract can be private and protected too
+* interface methods are public or public static. abstract can be private and protected too
+* utilize abstract class to group and share code among related classes
+    * utilize interfaces on unrelated classes
+* utilize interfaces if u wanna specify the behavior of a particular data type (like Animal)
+* utilize interfaces if u want multiple inheritance
+> all depends on the use case
