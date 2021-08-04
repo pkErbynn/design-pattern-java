@@ -258,3 +258,38 @@ Abstract Classes Vs Interfaces
 * utilize interfaces if u wanna specify the behavior of a particular data type (like Animal)
 * utilize interfaces if u want multiple inheritance
 > all depends on the use case
+
+##### Composition over Inheritance
+Another design principle which deals with using 'has-a' relationship over 'is-a'.
+'is-a' => tightly coupled
+'has-a' => loosely couples
+* Composition: use of HAS-A relationship btn classes in OO design
+    * something being a part of another thing
+    * a class contains another class as its member variable
+    * implies the child class cannot exist independently without the parent
+    * eg - wheels on an airplane, rooms in a house, cells in a body (when body is destroyed, cells get destroyed)
+    * _used in many design patterns_
+* Aggregation: HAS-A relationship b/n object where child can exist independently without the parent
+    * weak connection compared to Composition
+    * can exist separately
+    * eg - students in a class (get rid of class and the student still exist), tires on a car (tire can be taken off and be installed on different ones )
+* Vs = composition's child life is completely controlled by the parent unlike aggregation
+* Why Composition over Inheritance
+    1. help keep each class encapsulated and focused on one task. keeps class hierarchies small preventing them grow into unmanageable monsters
+    2. inheritance breaks encapsulation since subclasses heavily depend on the parent/base class behavior
+        * changes in super class, may break sub class's behavior
+        * inheritance = tightly coupled...composition = loosely coupled
+    3. most design patterns favor Composition over Inheritance
+        * Strategy
+        * Decorator
+        * If design pattern uses Composition then that means it has been tried and tested severally
+    4. composition offers better test-ability of a class than inheritance
+        * can easily provide a mock implementation
+        * for inheritance, u gotta mock both the super and subclasses
+    5. software reuse   
+        * composition is more reusable
+        * developers turn to use inheritance for the sake of code reuse
+        * composition is more flexible and extensible when reusing existing code
+        * composition allows for code reuse from a _final_ class     
+            * impossible for final class to be inherited(extended) in Java
+> Composition = maintainability + extensibility; Inheritance = reuseability (there a other ways to achieve reuse);
