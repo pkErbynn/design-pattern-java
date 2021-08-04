@@ -293,3 +293,29 @@ Another design principle which deals with using 'has-a' relationship over 'is-a'
         * composition allows for code reuse from a _final_ class     
             * impossible for final class to be inherited(extended) in Java
 > Composition = maintainability + extensibility; Inheritance = reuseability (there a other ways to achieve reuse);
+
+##### Delegation 
+One class 'delegating' its behavior to anther class
+* the class doesn't do all stuff by itself
+* forwards certain method calls to another class (called delegate)
+* the class simply calls other class which knows _what_ needs to be done, without knowing _how_ the other class does it
+
+an example of object composition
+   * another way of software reuse with composition over inheritance
+     
+makes you think of which message to forward/delegate
+   * doesn't force subclasses to accept methods of super class unlike inheritance
+
+primary advantage is run-time flexibility
+
+examples:
+* the equals() and hashcode() - the class itself does comparison(compare two objects) instead of client class(caller) doing that check 
+* event delegation - event delegated to handlers to handle
+* if class B, and delegated class A. use delegation if A is final but want to enhance it
+
+design patterns that uses delegation principle
+    * State - object delegates request to State object that represent the current state
+    * Strategy - obj delegates a specific request to an obj that represents a strategy(or has a strategy) for carrying out a request
+    * Visitor - operation that get performed on each element of an object structure is always delegated to the Visitor object
+
+
