@@ -314,8 +314,44 @@ examples:
 * if class B, and delegated class A. use delegation if A is final but want to enhance it
 
 design patterns that uses delegation principle
-    * State - object delegates request to State object that represent the current state
-    * Strategy - obj delegates a specific request to an obj that represents a strategy(or has a strategy) for carrying out a request
-    * Visitor - operation that get performed on each element of an object structure is always delegated to the Visitor object
+   * State - object delegates request to State object that represent the current state
+   * Strategy - obj delegates a specific request to an obj that represents a strategy(or has a strategy) for carrying out a request
+   * Visitor - operation that get performed on each element of an object structure is always delegated to the Visitor object
 
+##### Single Responsibility
+This states that every class should have only one job.
+* one class responsible for one task(or functionality) among a whole set of responsibilities that the system has
 
+closely related to the concepts of **coupling** and **cohesion**
+* coupling: degree of how interdependent software classes and methods are
+    * how closely connected two classes or methods are (the strength of relationship b/n classes)
+    * tight coupling => two classes/methods are closely connected (change in one module affect another) 
+    * low coupling => small dependencies (easier to change code without affecting other part)
+* cohesion: what the class(or method) can do (how focused a class/method is)
+    * low cohesion => class does variety of different things (ie, unfocused)
+    * high cohesion => class is focused on what it does
+
+aims: limiting the impact of change by designing low/loosely coupled classes that are highly cohesive 
+
+eg of responsibilities
+* persistence
+* validation
+* notification 
+* formatting
+* parsing
+* mapping
+* class instantiation 
+
+##### Open Close Principle
+Classes and methods should be Open for extension(new funtionality) and Close for modification
+* class should be easily extendable without modifing the class itself
+* code that new functionality can be added without changing existing code
+* "the most important principle of oop design"
+Aims: prevents touching dependency while changing code + reduces tight coupling 
+ 
+##### Liskov Substitution Principle
+States that object of a superclass can be replaceable with objects of its subclasses without breaking the application
+* requires that methods which uses superclass type must be able to work with the subclass without any issue
+* LSP is closely related to the Single responsibility principle
+* related to the open/close principle 
+ 
