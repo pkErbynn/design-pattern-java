@@ -354,4 +354,16 @@ States that object of a superclass can be replaceable with objects of its subcla
 * requires that methods which uses superclass type must be able to work with the subclass without any issue
 * LSP is closely related to the Single responsibility principle
 * related to the open/close principle 
+
+How to fix?: through inheritance
  
+##### Interface Segregation Principle
+Client should not be forced to implement an interface if there exist a method they do not use
+* happens when an interface has many functionalities and not all will be used
+* if done, it's just to compile...this is referred as a **"fat"** interface
+* this principle, avoids design drawbacks that are associated with a fat interface by refactoring each **fat** interface into multiple segregated interfaces to achieve a **lean interface** (methods of specific purpose)
+
+##### Dependency Inversion Principle
+
+
+How to fix?: split the interface into multiple based on one functionality
