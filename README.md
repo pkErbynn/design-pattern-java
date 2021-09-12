@@ -363,7 +363,23 @@ Client should not be forced to implement an interface if there exist a method th
 * if done, it's just to compile...this is referred as a **"fat"** interface
 * this principle, avoids design drawbacks that are associated with a fat interface by refactoring each **fat** interface into multiple segregated interfaces to achieve a **lean interface** (methods of specific purpose)
 
-##### Dependency Inversion Principle
-
-
 How to fix?: split the interface into multiple based on one functionality
+
+##### Dependency Inversion Principle
+Higher level classes must not depend directly on lower level classes
+* both higher and lower classes should depend on abstraction(interface)
+* lower level classes is accessible to higher level classes via **abstract interface**
+        * cus the actual implementation of lower level classes can vary
+* no variable to have a reference to a concrete class
+    * use factory design to avoid this
+
+"Inversion" in the name => inverts the way we think about OO design
+    * ie, from top-to-bottom level, with bottom-to-top with abstraction
+
+Similar to "Program to an Interface, not an actual implementation"
+    * IDP makes stronger emphasis on abstraction
+  
+It's the **central underlying principle** in design pattern   
+ 
+ 
+
