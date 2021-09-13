@@ -381,5 +381,39 @@ Similar to "Program to an Interface, not an actual implementation"
   
 It's the **central underlying principle** in design pattern   
  
- 
+##### Dependency Injection Principle
+A class, A has a **dependency** on another class, B, if class A uses an instance of class B.
+* called **class dependency** 
+* if class A uses the 'new' operator to instantiate class B, this is called **hard dependency**
+* classes needs to be independent as possible via Dependency Injection
+    * increases class resuse
+    * ability **test** classes independently
+    * makes code flexible and maintainable
+* this principle solves the **hard dependency**
 
+Dependency injection => technique whereby one object supplies the dependencies of another
+* enables replacement of dependencies without changing the class that uses it
+* dependency => object that can be used (say a service)
+* injection => way of passing dependency(service) to the dependant object(client) that would use it
+* improves **Dependency Inversion**
+    * main focus => introduces interface b/n lower level class and higher level class
+    * *however, dependency exist since only decouples lower level class but not its instantiation*  
+* 4 guides to achieve Dependency Injection
+    1. the service to be used
+    2. the client that uses the service
+    3. the interface implemented by service and uses by client
+    4. the injector that creates the service instance and injects into the client
+    
+> guide 1 - 3 => achieves Dependency Inversion
+> plus 4 => achieves Dependency Injection  
+
+* why / benefits: 
+    * removes hard-coded dependency
+    * loosely coupled application
+    * extendable and maintainable
+    * testable
+
+* injection types
+    * constructor injection
+    * setter injection: client exposes a setter method
+    * interface injection

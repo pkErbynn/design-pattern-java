@@ -7,7 +7,7 @@ abstract class Vehicle {
     abstract int getCubicCapacity();
 }
 
-public class Car extends Vehicle {
+class Car extends Vehicle {
 
     @Override
     int getSpeed() { return 0; }
