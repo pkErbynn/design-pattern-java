@@ -441,3 +441,6 @@ Documentation that describes the design pattern
 ## Design Patterns
 ### 1. Factory Method
 ##### - Factory (Abstract Creator)
+##### - Factory (Concrete Creator)
+##### - Factory (Static Method Creator)
+* Also called the Static Factory

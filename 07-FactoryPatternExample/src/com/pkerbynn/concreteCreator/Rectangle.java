@@ -1,4 +1,4 @@
-package com.pkerbynn;
+package com.pkerbynn.concreteCreator;
 
 public class Rectangle implements IShape {
     @Override

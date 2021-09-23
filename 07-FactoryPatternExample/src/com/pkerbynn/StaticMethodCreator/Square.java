@@ -1,4 +1,4 @@
-package com.pkerbynn;
+package com.pkerbynn.StaticMethodCreator;
 
 public class Square implements IShape {
     @Override
