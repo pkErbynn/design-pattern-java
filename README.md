@@ -2,7 +2,7 @@
 Placing distinction on writing high quality code. Not good enough to just produce the correct output, but code that is easy to maintain, properly cohesive and loosely coupled.
 Instructor: Jason Fedin
 
-### Structure
+## Structure
 * Overview of Design Pattern (DP)
 * Benefits of DP (why use DP?)
 * Types of DP: Each identifies a subset of pattern that can be used to solve specific problems
@@ -60,7 +60,7 @@ Instructor: Jason Fedin
     * become proficient in basic design principles
     * enjoy & have fun!
     
-### Overview
+## Overview
 * There things we do in our daily routine that we can recognize that it gets repeated all the time. Let's call it Routine/Pattern.
 * Similarly, in the Software community certain solutions to a problem gets repeated and are addressed in a particular standard  way. Let's call it Design Pattern.
 * Design Patterns are aimed towards Object-Oriented programming languages
@@ -103,7 +103,7 @@ They are standard solutions provides to recurring and common design problems.
     * shift the level of thinking to a higher perspective
 * improves modifiability and maintainability
 
-### Types of Design Patterns
+## Types of Design Patterns
 There 23 Patterns differ at levels of granularity, abstraction and how they relate to one another
 * some patterns often used together - Composite and Iterator/Visitor
 * some patterns are alternatives - Prototype and Abstract Factory
@@ -180,7 +180,7 @@ Organization by Scope (whether classes or objects)
     
 #### Selecting and Using Design Patterns
 
-### Principles and Strategies of Design
+## Principles and Strategies of Design
 #### Overview
 Design patterns use these principles. Helps understand design patterns
 
@@ -437,3 +437,7 @@ Documentation that describes the design pattern
         * Statechart
         * Deployment 
         * Component
+        
+## Design Patterns
+### 1. Factory Method
+##### - Factory (Abstract Creator)
