@@ -417,3 +417,23 @@ Dependency injection => technique whereby one object supplies the dependencies o
     * constructor injection
     * setter injection: client exposes a setter method
     * interface injection
+    
+    
+### UML
+Documentation that describes the design pattern
+  * an acronym that stands for "Unified Modelling Language" 
+  * modelling => activity carried out in software dev during the design phase
+  * UML => modelling language to create models and providing standard way in visualizing the design of a system 
+    * documenting tool to illustrate object and their relationships
+    * aim: communication of design concepts among team members
+    * demonstrate design concepts like abstraction, polymorphism, encapsulation
+    * 9 types of UML diagrams
+        * Class diagram
+        * Object
+        * Use case
+        * Sequence
+        * Collaboration
+        * Activity
+        * Statechart
+        * Deployment 
+        * Component
