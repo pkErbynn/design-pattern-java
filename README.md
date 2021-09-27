@@ -448,8 +448,16 @@ NB: Cover the implementation before the theory
 * gives way to encapsulate the instantiation of concrete types
     * promote the approach of coding to an interface rather than an implementation
     * provides abstraction b/n implementation and client classes through inheritance
+* used when
+    * a class wants its subclasses to specify the object it creates
+    * a class needs to instantiate a subclass of another class, but does not know which one
+        * it lets the subclass decides which class to instantiate
+* benefits
+    * decouples the business logic of creation of a class from its actual logic of the class 
+        * ie. decouples the implementation of product (object) from its use
+    * makes code more robust, less coupled and easy to extend
 * ways of implementing Factory method
-    *  Factory (Abstract Creator)
+    * Factory (Abstract Creator)
     * Factory (Concrete Creator)
     * Factory (Static Method Creator): also called the Static Factory
 
