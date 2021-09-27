@@ -438,9 +438,18 @@ Documentation that describes the design pattern
         * Deployment 
         * Component
         
+NB: Cover the implementation before the theory
+
 ## Design Patterns
+
 ### 1. Factory Method
-##### - Factory (Abstract Creator)
-##### - Factory (Concrete Creator)
-##### - Factory (Static Method Creator)
-* Also called the Static Factory
+* falls under creational pattern
+    * factory handles the details of object creation by defining an interface for creating an object (Creator)
+* gives way to encapsulate the instantiation of concrete types
+    * promote the approach of coding to an interface rather than an implementation
+    * provides abstraction b/n implementation and client classes through inheritance
+* ways of implementing Factory method
+    *  Factory (Abstract Creator)
+    * Factory (Concrete Creator)
+    * Factory (Static Method Creator): also called the Static Factory
+

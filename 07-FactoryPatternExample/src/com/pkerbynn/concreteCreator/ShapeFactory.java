@@ -1,7 +1,7 @@
 package com.pkerbynn.concreteCreator;
 
 public class ShapeFactory {
-    public IShape createShape(String shapeType){
+    public IShape createShape(String shapeType){    // passed param is key
         if(shapeType == null){
             return null;
         } else if(shapeType.equalsIgnoreCase("CIRCLE")){
