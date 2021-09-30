@@ -448,6 +448,7 @@ NB: Cover the implementation before the theory
 * gives way to encapsulate the instantiation of concrete types
     * promote the approach of coding to an interface rather than an implementation
     * provides abstraction b/n implementation and client classes through inheritance
+* defines an interface for creating objects 
 * used when
     * a class wants its subclasses to specify the object it creates
     * a class needs to instantiate a subclass of another class, but does not know which one
@@ -461,3 +462,15 @@ NB: Cover the implementation before the theory
     * Factory (Concrete Creator)
     * Factory (Static Method Creator): also called the Static Factory
 
+### 2. Abstract Factory Method
+* a creational pattern
+* provides an interface for creating families of related object or dependent object without specifying their concrete classes
+* it's a **"factory of factories"**. A super factory that creates other factories
+    * factory method is a subset of Abstract Factory
+* creates objects via abstractions
+* methods are implemented as factory methods
+* there's often on Concrete class implemented for each family
+* * *todo:** implementation...
+
+### 3. Singleton Method
+* a creational pattern

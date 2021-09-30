@@ -1,6 +1,6 @@
 package challenge;
 
-interface IAnimalFactory {
+interface IAnimalFactory {  // factory defines an interface for creating objects
     public IAnimal getAnimalType(String animalType) throws Exception;
 }
 
