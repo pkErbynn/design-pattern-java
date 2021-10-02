@@ -530,3 +530,28 @@ NB: Cover the implementation before the theory
 * when not used
     * if the object needs to be mutable
         * ie, object which can be modified after the creational process is over
+        
+* implementation overview
+    * main participants
+        1. Product
+            * representation of the actual complex object under construction 
+            * internal product built by Concrete Builder
+        2. Concrete Builder
+            * construct n assembles parts of the product by impl the Builder interface
+            * ...by overriding operations for components it's interested in creating
+            * keeps track of the representation it creates
+            * usually appends to the product via some type of list
+            * sometimes parts of previous product constructed may be needed in the next component
+                * builder would return child node to director, which then would be pass back to the builder to build the parent nodes
+            * provides an interface for retrieving product (ie, getProduct())
+        3. Builder
+            * specifies abstract interface for creating parts of a products
+            * defines an operation for each component that it may ask
+            * general enough to construct product of diff kinds
+        3. Director
+            * construct obj using the Builder interface
+    * Processes...
+        * Client creates the Director obj configuring the desired Builder object
+        *...Director notifies the builder when ever part of the product needs to be built
+        *...Builder handles the request from the Director and adds parts to the product
+        *...Client retrieves the final product from the builder (not the director)
