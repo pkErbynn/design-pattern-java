@@ -474,3 +474,59 @@ NB: Cover the implementation before the theory
 
 ### 3. Singleton Method
 * a creational pattern
+* example
+    * logging service
+
+### 4. Builder Pattern
+* creational pattern
+* the builder pattern separates the construction of a complex object from its representation
+    * used when there is a lot of complexity in creating an object
+    * creation of object vary. it depends on the parameters / requirement
+    * uses the same construction processes to create same object but these processes can create different representation of the object
+    * the builder class is independent of other objects
+* useful when creating an object is very complex and the object is independent of the assembly of the parts of the object
+    * for building composite structures (many has-a relationships)
+    * when object has many internal representations
+    * when object demands many arguments / attributes
+    * when the complex object does not depend on its individual parts that make up the object and how they are assembled
+    * when the construction process must allow different representations(or requirements) for the object that is constructed
+* examples
+    * 1. creating a computer
+        * can see that different parts a assembled depending on the demand of the customer
+            * customer A can demand a 500GB hdd and intel processor
+            * customer B can demand a 315GB ssd with AMD processor
+            * NB: all these will still make a computer buh with diff specs 
+    * 2. building a vacation planner for Disney World
+        * different packages available for a booking
+            * guests can choose a hotel and various types of admission tickets
+            * guests can make restaurant reservations, and even book special events
+            * therefore, this requires flexible design
+                * each guest can have a diff # of days and types of activities
+                * local resident might not need a hotel, but wants to book for dinner
+                * external guest will hotel, dinner and special activity
+* why Builder Pattern? 
+    * solves problems with Factory and Abstract Factory patterns
+        * these patterns don't work well when the object to created requires a lot of attributes
+        * 3 major issues caused on that
+            * too many args to be passed from client to the Factory class
+                * difficult to maintain the order of the args on the client side
+            * some args might be optional 
+                * client is force to send NULL to optional params in the Factory class
+            * factory class will be complex
+                * if the object is heavy and complex to create
+        * temp solution
+            * pass required params to the Factory class constructor and optional param to a setter method
+        * better solution 
+            * use Builder pattern
+            * provides a way to build an object step-by-step
+            * provides a method that returns the final complex object   
+            
+* advantages
+    * encapsulate the processes in building a complex object
+    * allows objects to be constructed in multi-steps(based on scenario requirement) unlike one-step process by the Factory design pattern
+    * hides the internal representation of the product from the client
+    * flexible product implementation because client only sees an abstract interface
+
+* when not used
+    * if the object needs to be mutable
+        * ie, object which can be modified after the creational process is over
