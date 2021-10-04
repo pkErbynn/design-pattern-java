@@ -442,6 +442,7 @@ NB: Cover the implementation before the theory
 
 ## Design Patterns
 
+======= Creational ========
 ### 1. Factory Method
 * falls under creational pattern
     * factory handles the details of object creation by defining an interface for creating an object (Creator)
@@ -555,3 +556,40 @@ NB: Cover the implementation before the theory
         *...Director notifies the builder when ever part of the product needs to be built
         *...Builder handles the request from the Director and adds parts to the product
         *...Client retrieves the final product from the builder (not the director)
+        
+### 5. Prototype Pattern
+* the final creational pattern
+* refers to creating a duplicate object while keeping performance in mind
+* when used
+    * when creating a new object instance is costly, requiring lots of time and resources and you have a similar object already existing
+    * instantiating classes a runtime, ie. dynamic loading 
+    * instances of class have only a few changes in their state
+* provides mechanism for copying the original object to a new object and modifying it according to needs
+    * copy types: shallow and deep
+    * object to be copied should provide that copying feature
+* examples
+    1. making changes to a master document in order to have a dif feel
+    2. creating an app from an existing one and adding few new features
+    3. an obj that loads data from db 
+        * need to modify data multiple time, not good idea to create new one using the new keyword and load all data from db again
+        * obj loaded can be cached and return a clone of the cache for the next request. Reduces this number of db calls.  
+    4. version control like gitHub's PR processes
+* Advantages
+    1. hides the complexity of creating object from client
+    2. in some circumstances, copying object is more efficient than creating new one
+    3. creating obj at cheaper cost 
+* Agents/Participants involved
+    1. Client: creates obj by asking the Prototype
+    2. Prototype: declares an interface for cloning itself
+    2. ConcretePrototype: impl the operation for cloning itself
+    
+<br>   
+====== Structural ========
+
+Describes how classes and objects can be combined to form larger one.<br>
+    * these patterns utilizes inheritance to interfaces and impl<br>
+    * describes how to assemble objects
+    * building a hierarchy made up of different kinds of objects
+    * describes how relationships b/n classes and objects are defined
+    * examples; bridge, decorator, composite, facade, proxy, and flyweight pattern
+    * 7 structural design patterns 

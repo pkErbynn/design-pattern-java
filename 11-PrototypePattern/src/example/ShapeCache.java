@@ -3,7 +3,7 @@ package example;
 import java.util.Hashtable;
 
 public class ShapeCache {
-    private static Hashtable<String, Shape> shapeMap = new Hashtable<String, Shape>();
+    private static Hashtable<String, Shape> shapeMap = new Hashtable<String, Shape>(); // abstract class type passed
 
     // get concrete object from cache and returning a copy
     public static Shape getShape(String id){
@@ -11,7 +11,7 @@ public class ShapeCache {
         return (Shape) cachedShape.clone(); // cloned object
     }
 
-    // populating cache
+    // populating concrete into cache
     public static void loadShapeHelper(){
         Circle circle = new Circle();
         circle.setId("1");
