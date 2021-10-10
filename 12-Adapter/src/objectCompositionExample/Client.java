@@ -19,6 +19,5 @@ public class Client {
         System.out.println("Turkey adapter : ");
         USTurkeyGhDuck.fly();
         USTurkeyGhDuck.quack();
-
     }
 }

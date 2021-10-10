@@ -8,6 +8,7 @@ package objectCompositionExample;
 public class TurkeyAdapter implements IDuck {   // duck as target
     ITurkey turkey; // turkey as source,x needed for conversions. uses composition
 
+    // Adopter class (that needs to be wrapped) is passed as constructor parameter
     public TurkeyAdapter(ITurkey turkey) {  // Adapter class needs an instance of the turkey adopter
         this.turkey = turkey;
     }
