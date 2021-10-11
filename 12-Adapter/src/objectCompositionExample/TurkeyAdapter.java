@@ -6,7 +6,7 @@ package objectCompositionExample;
 // means, turkey is the adopter, duck = Adaptee / Target
 
 public class TurkeyAdapter implements IDuck {   // duck as target
-    ITurkey turkey; // turkey as source,x needed for conversions. uses composition
+    ITurkey turkey; // turkey as source,x needed for conversions. uses composition item matches the adoptor name
 
     // Adopter class (that needs to be wrapped) is passed as constructor parameter
     public TurkeyAdapter(ITurkey turkey) {  // Adapter class needs an instance of the turkey adopter
