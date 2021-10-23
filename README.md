@@ -593,3 +593,22 @@ Describes how classes and objects can be combined to form larger one.<br>
     * describes how relationships b/n classes and objects are defined
     * examples; bridge, decorator, composite, facade, proxy, and flyweight pattern
     * 7 structural design patterns 
+    
+### 1. Adaptor Pattern
+* Geared towards making unrelated classes work together
+    * usually applied to systems after being designed
+
+### 2. Bridge Pattern
+* Lets abstractions and implementations decoupling varying independently
+    * usually applied to systems after being designed
+* toughest to understand cus it is so powerful and applies to many situations
+    * goes against a common tendency to handle special cases with inheritance 
+* There is an Abstraction class hierarchy and Implementation class hierarchy (with lots of implementations)
+    * the has-a relationship between the two is called the "bridge"
+    * helps to independently vary the abstraction and the implementation
+* Extremely helpful when our class and it's functionalities may change in frequently intervals
+    * class having many implementations
+    * binding b/n abstraction and corresponding implementation is removed
+    * both hierarchies (abstractions and implementations) can grow and extend through child classes
+    * abstraction contains a reference to its implementer
+    * can change implementers dynamically (at runtime) by changing reference in the abstraction

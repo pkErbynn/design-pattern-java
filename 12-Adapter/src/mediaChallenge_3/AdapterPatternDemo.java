@@ -7,6 +7,7 @@ public class AdapterPatternDemo {
         IAdvancedMediaPlayer mp4Player = new Mp4Player();
         IAdvancedMediaPlayer vlcPlayer = new VlcPlayer();
         IMediaPlayer audioPlayer = new AudioPlayer();
+
         audioPlayer.play("mp3", "Focus");
 
         AdvancedMediaPlayerAdapter ampa = new AdvancedMediaPlayerAdapter(mp4Player);
