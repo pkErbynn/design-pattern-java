@@ -597,6 +597,10 @@ Describes how classes and objects can be combined to form larger one.<br>
 ### 1. Adaptor Pattern
 * Geared towards making unrelated classes work together
     * usually applied to systems after being designed
+    * also known as "wrapper"
+* examples: 
+    * card reader - acts as adapter b/n memory card and a laptop
+    * simple ac adapter (multisocket) - changes the shape of the outlet in order to match the plug 
 
 ### 2. Bridge Pattern
 * Lets abstractions and implementations decoupling varying independently
@@ -612,3 +616,25 @@ Describes how classes and objects can be combined to form larger one.<br>
     * both hierarchies (abstractions and implementations) can grow and extend through child classes
     * abstraction contains a reference to its implementer
     * can change implementers dynamically (at runtime) by changing reference in the abstraction
+    
+### 2. Composite Pattern
+- Treat ind'l as a group
+- Individual and groups that can be treated the same with similar kind of object
+- Tree structure - composite and leaf node
+- A composite is an object designed as a composition of one/more similar object that all exhibit similar functionality
+    * group of object treated same way as a single instance of same type of object
+- Why and When used ?
+    * when many objects have common functionalities 
+        * creates a class that contains a group of its own objects
+    * example
+        * all employees form an organization, a group of people creates a department
+        * a tree structure of menus, submenus along with menu items can be treated as "big huge menu" 
+    
+    * usage
+        * Client uses the Component interface to interact w/ objects in the composition structure
+        * if recipient is a leaf, then request is handled directly
+        * if recipient is a composite, then it usually forwards request to its child components    
+        * Client doesn't know whether dealing with a leaf or a composite component
+    * cons
+        * disobeys the Single Responsibiliy principle as it groups objects
+    
