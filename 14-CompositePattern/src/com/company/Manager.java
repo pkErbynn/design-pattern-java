@@ -26,6 +26,8 @@ public class Manager implements Employee {
         }
     }
 
+    // employee management done here
+
     public void addEmployee(Employee employee){
         employees.add(employee);
     }
