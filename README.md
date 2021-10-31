@@ -597,8 +597,8 @@ Describes how classes and objects can be combined to form larger one.<br>
 ### 1. Adaptor Pattern
 * Geared towards making unrelated classes work together
     * usually applied to systems after being designed
-    * also known as "wrapper"
-* examples: 
+    * converts a class to another responsibility, example converts a plumber to be a chef.
+* more examples: 
     * card reader - acts as adapter b/n memory card and a laptop
     * simple ac adapter (multisocket) - changes the shape of the outlet in order to match the plug 
 
@@ -636,5 +636,34 @@ Describes how classes and objects can be combined to form larger one.<br>
         * if recipient is a composite, then it usually forwards request to its child components    
         * Client doesn't know whether dealing with a leaf or a composite component
     * cons
-        * disobeys the Single Responsibiliy principle as it groups objects
+        * disobeys the Single Responsibility principle as it groups objects
     
+### 2. Decorator Pattern
+what?
+* primarily help attach additional responsibility to an object dynamically
+    * provides a flex alternative to subclassing for extending functionality
+    * modifies functionality of an object at runtime
+    * decorator adds responsibilities to individual objects, not to an entire class
+
+When to use?
+* adding new functionality to an existing object without altering its structure/functionality
+
+Example:
+* suppose adding a new floor to already owned house
+    * we don't wanna change the architecture of the ground floor
+* user interface toolkits use decorator to add graphical additions (like border, scroll) to widgets
+
+How?
+* compose object by wrapping one object w/ another to provide new functionality
+    * focus on how object is composed to dynamically gain functionality
+* it's a structural pattern cuz does NOT focus on the communication and interconnection b/n objects (behavioural pattern)
+
+Why?
+* helps code incrementally, adding functionality step-by-step
+* biggest advantage: add new functionality to particular object with disturbing existing object in the system
+    * functionality can be attached and detached at runtime
+    * more flex than static inheritance
+
+Con 
+* might result in large number of small classes
+    * lots of little objects can be hard to debug 
