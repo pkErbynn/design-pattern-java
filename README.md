@@ -707,3 +707,6 @@ When used?
 Advantages and Drawbacks
 * number of objects at runtime is reduced
 * centralizes states for "virtual" objects into a single location for sharing
+
+### 7. Proxy Pattern
+This pattern provides a rep for another object in order to control the client's access to it
