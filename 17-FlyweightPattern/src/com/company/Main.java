@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        RobotFactory myFactory = new RobotFactory();
+        RobotFlyweightFactory myFactory = new RobotFlyweightFactory();
         System.out.println("Flyweight Pattern");
 
         IRobot shape = null;

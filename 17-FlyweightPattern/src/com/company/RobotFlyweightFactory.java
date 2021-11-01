@@ -5,7 +5,7 @@ package com.company;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RobotFactory {
+public class RobotFlyweightFactory {
     Map<String, IRobot> shapes = new HashMap<>();   // cache
 
     public int totalObjectsCreated(){
