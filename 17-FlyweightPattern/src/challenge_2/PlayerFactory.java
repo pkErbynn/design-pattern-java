@@ -3,13 +3,16 @@ package challenge_2;
 import java.util.HashMap;
 
 public class PlayerFactory {
-    private static HashMap<String, IPlayer> kvp = new HashMap<>();
+    private static HashMap<String, IPlayer> playersByTypes = new HashMap<>();
 
     public static IPlayer getPlayer(String type) {
         IPlayer player = null;
 
-        if (kvp.containsKey(type)) {
-            player = kvp.get(type);
+        // get existing player
+        // otherwise create player and cache if player not exist already
+
+        if (playersByTypes.containsKey(type)) {
+            player = playersByTypes.get(type);
         }
         else {
             switch (type) {
@@ -23,9 +26,9 @@ public class PlayerFactory {
                     System.out.println("Invalid player");
             }
 
-            kvp.put(type, player);
+            playersByTypes.put(type, player);
         }
 
-        return player;
+        return player;  // returned to set other dynamic state like weapon
     }
 }

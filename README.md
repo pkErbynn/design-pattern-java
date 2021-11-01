@@ -695,9 +695,9 @@ This pattern uses sharing technique to support a large # of fined-grained object
 * uses already existing created object by storing them 
 * creates a new instance when no existing object is found or matched
     
-Intrinsic and Extrinsic state
+Intrinsic and Extrinsic state - need to be identified
 * common term used in the flyweight pattern
-* intrinsic state/props: can be shared in flyweight and shared
+* intrinsic state/props: can be shared in flyweight and shared...static or default for all/some objects
 * extrinsic state/props: depends on a flyweight and it's NOT shareable...additional changes that differ from the core props 
 
 When used?
