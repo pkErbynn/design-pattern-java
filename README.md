@@ -617,7 +617,7 @@ Describes how classes and objects can be combined to form larger one.<br>
     * abstraction contains a reference to its implementer
     * can change implementers dynamically (at runtime) by changing reference in the abstraction
     
-### 2. Composite Pattern
+### 3. Composite Pattern
 - Treat ind'l as a group
 - Individual and groups that can be treated the same with similar kind of object
 - Tree structure - composite and leaf node
@@ -638,7 +638,7 @@ Describes how classes and objects can be combined to form larger one.<br>
     * cons
         * disobeys the Single Responsibility principle as it groups objects
     
-### 2. Decorator Pattern
+### 4. Decorator Pattern
 what?
 * primarily help attach additional responsibility to an object dynamically
     * provides a flex alternative to subclassing for extending functionality
@@ -667,3 +667,43 @@ Why?
 Con 
 * might result in large number of small classes
     * lots of little objects can be hard to debug 
+    
+### 5. Facade Pattern
+* What:
+    * Pattern provides a unified interface to a set of interfaces in a sys
+    * Defines a high level interface making sub-sys easier to use
+    * Hides complexities of the subsys from the client 
+    * Delegates request to the appropriate subsys object that is responsible
+    * Does NOT add additional functionality
+* Advantages:
+    * shields client from subsys component
+        * reducing num of objects client deals with 
+    * reduces complex dependencies
+    * provides single, simplified interface reping the dependencies or subsys
+* When to use:
+    * when to provide a simple interface to a complex subsys
+    * when there'r many dependencies b/t client and an abstraction's impl
+    
+* Facade Vs Adopter Vs Decorator
+    * Adopter: wraps to changes an interface into one a client experts
+    * Decorator: wraps an object to add new responsibilities
+    * Facade: wraps a set of objects to simplify
+
+### 6. Flyweight Pattern
+This pattern uses sharing technique to support a large # of fined-grained objects efficiently
+* primarily used to reduce the number of objects created
+* uses already existing created object by storing them 
+* creates a new instance when no existing object is found or matched
+    
+Intrinsic and Extrinsic state
+* common term used in the flyweight pattern
+* intrinsic state/props: can be shared in flyweight and shared
+* extrinsic state/props: depends on a flyweight and it's NOT shareable...additional changes that differ from the core props 
+
+When used?
+* when app uses a large number of objects
+* when app does not depend on objects identity
+
+Advantages and Drawbacks
+* number of objects at runtime is reduced
+* centralizes states for "virtual" objects into a single location for sharing
