@@ -734,3 +734,44 @@ how
     * each receiver contains a reference to another receiver
 
 TODO: challenge implementation
+
+### 9. Command Pattern
+
+### 10. Interpreter Pattern
+used to impl a simple language, language translator
+used in regular expression, parsing
+
+### 11. Iterator Pattern
+
+### 12. Mediator Pattern
+* mediator design pattern defines **object that encapsulate how a set of objects interact**
+* takes responsibility of **communication among a group of objects**
+    * an intermediary who can track the comm btn two objects
+    * all objects in the sys are aware of this mediator
+    * objects know that they **need to go through the mediator to comm among themselves**
+* mediator works as a **router btn objects**
+    * has its own logic to provide way of comm
+* reduces communication complexity btn multiple objects / classes
+
+Participants:
+1. Mediator: defines an interface for communicating with Colleague objects
+    * Concrete mediator: impl cooperative behaviour by coordinating Colleague objects to route request btn appropriate colleagues, knows and maintains its colleague
+2. Colleagues:
+    * each colleague has its mediator
+    * each communicates with its mediator by sending and receiving request from the mediator
+    * each comm with its mediator when an event of interest occurs
+        * one way is to implement Mediator as an Observer
+        * **sends notification to mediator whenever a change occurs**
+        * **mediator responds by propagating the effects of the change to other colleagues**
+
+Advantages:
+* replaces many-to-many interactions with one-to-many interactions btn the mediator and its colleague
+    * easy to understand and maintain
+Example: 
+* airport control room works as a mediator for communication b/n diff flight
+
+When to use:
+* to centralize complex communications and control b/n related objects
+* when reusing an object is difficult because it refers and communicates with **other many objects**
+impl > overview
+
