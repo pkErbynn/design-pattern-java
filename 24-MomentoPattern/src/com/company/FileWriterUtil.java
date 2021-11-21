@@ -32,6 +32,8 @@ public class FileWriterUtil {
     }
 
     // this create a deep copy of the states of the object....and the entire object saved by the caretaker
+        // hidden from the caretaker...opaque object
+    // same as the Originator, FileWriterUtil
     private class Momento {
         private String name;
         private StringBuilder content;
