@@ -773,5 +773,28 @@ Example:
 When to use:
 * to centralize complex communications and control b/n related objects
 * when reusing an object is difficult because it refers and communicates with **other many objects**
-impl > overview
 
+### 12. Momento Pattern
+* This design pattern help to capture and externalize an object's internal state so that the obj can be restored to the later state
+    * without violating encapsulation
+* Simply, **saves object state can be undo-ed**
+* Implemented in such a way that object's saved state is not accessible outside of the object
+    * achieved using **internal class**
+
+* Examples:
+    * in notepad, undo can be made frequently by pressing ctrl + z
+    * the state in a finite state machine
+    * "save progress" option in a video game
+ 
+* When to use:
+    * to be able to return an object to one of its previous states when a user request an "undo" 
+        * to record the internal state of an object in order to restore obj to their prev state
+        * when impl checkpoints and undo mechanisms
+        
+* Advantages
+    * protects the integrity of saved state data
+    * does not break encapsulation
+
+* Consequence
+    * considerable overhead can be caused if large amount of info need to be stored
+       * unless encapsulating and restoring state is cheap, the pattern might not be appropriate
