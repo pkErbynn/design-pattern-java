@@ -798,3 +798,27 @@ When to use:
 * Consequence
     * considerable overhead can be caused if large amount of info need to be stored
        * unless encapsulating and restoring state is cheap, the pattern might not be appropriate
+       
+       
+### 13. Observer Pattern
+Observer design pattern defines a one-to-many relationship b/n objects so that when one object changes state, all of its dependents/listeners are notified and updated automatically
+    * many objects need to be notified whenever an event occurs
+    * notify-ers and notify-ees are decoupled
+        * more flex with requirement change
+
+How?
+* many observers(objects) which are observing a particular subject(objects)
+* observers register themselves to a subject
+* observers get notified automatically whenever subject data changes
+* when observers lose interest in the subject, they simply unregister and no longer gets notified
+ 
+Examples:
+* newspaper and magazine subscription
+* celebrity having many fans
+* GUI toolkits and event listeners
+    * the button (subject) and onClickListener (observer)
+* social media, email subscriptions
+
+When To Use:
+* when a change in one object requires changing others, do not know the numbers object to be changed/updated
+* when an object should be able to notify other objects without making assumptions about who these objects are
