@@ -736,12 +736,14 @@ how
 TODO: challenge implementation
 
 ### 9. Command Pattern
+No overview and impl
 
 ### 10. Interpreter Pattern
-used to impl a simple language, language translator
-used in regular expression, parsing
+No overview and impl <br>
+used in implementation of simple language, language translator, regular expression, parsing
 
 ### 11. Iterator Pattern
+No overview and impl
 
 ### 12. Mediator Pattern
 * mediator design pattern defines **object that encapsulate how a set of objects interact**
@@ -805,6 +807,7 @@ Observer design pattern defines a one-to-many relationship b/n objects so that w
     * many objects need to be notified whenever an event occurs
     * notify-ers and notify-ees are decoupled
         * more flex with requirement change
+    * mostly used pattern
 
 How?
 * many observers(objects) which are observing a particular subject(objects)
