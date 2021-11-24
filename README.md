@@ -862,7 +862,8 @@ Object are created representing the various strategies + context object whose be
 
 When?
 * used when need to configure many behaviours for a class, thus diff variants in algo
- 
+* alternative to subclassing, choice implementation 
+
 Why?
 * strategies can be switched at runtime (polymorphism)
 * enables client use required algo, instead of using "switch" or "if/els" statement
