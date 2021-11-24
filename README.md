@@ -825,3 +825,26 @@ Examples:
 When To Use:
 * when a change in one object requires changing others, do not know the numbers object to be changed/updated
 * when an object should be able to notify other objects without making assumptions about who these objects are
+
+
+### 14. State Design Pattern
+Allows object to alter its behavior when its internal state changes
+ * **object will appear to change its class** (new On() / new Off())
+ * behaviour get changed at runtime depending on the state (polymorph)
+<br><br>
+* Normally, to change the behaviour of object based on its state, a state variable is used together with if-else condition to perform diff action based on the state
+* In State DP, dep on if/else or switch/case conditional logic is removed
+    * object is created representing each state (on/off) +
+    * **context object (tv) whose behavior varies as its state changes**
+    * uses Context and State implementation systematic
+
+Example:
+* traffic signal - stop, ready, go (behave diff based on state)
+
+When?
+- when an object's behaviour depends on its state, and must change its state at run-time depending on that state
+- when operations have many conditional statements depending on the obj's state
+
+why?
+- puts all behaviour associated with a state into one object improving cohesion
+- easy to add more state for additional behaviour
