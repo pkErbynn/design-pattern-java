@@ -848,3 +848,29 @@ When?
 why?
 - puts all behaviour associated with a state into one object improving cohesion
 - easy to add more state for additional behaviour
+
+
+### 14. Strategy Design Pattern
+Strategy defines a family of algorithms that are interchangeable
+    * conceptually, these algos do same things with diff implementations
+    * behaviour of algo is selected dynamically at runtime
+    * client app **passes the algo to be used as a parameter**
+    * achieved through polymorphism
+
+Object are created representing the various strategies + context object whose behaviour varies as per its strategy object
+    * the strategy obj changes the executing algo of the context obj
+
+When?
+* used when need to configure many behaviours for a class, thus diff variants in algo
+ 
+Why?
+* strategies can be switched at runtime (polymorphism)
+* enables client use required algo, instead of using "switch" or "if/els" statement
+* simplifies unit testing
+ 
+vs State Pattern
+* Strategy are like subclasses that decide how to impl steps in an algo
+* State as an alt to putting lots of conditionals in the context
+* In State, Context **contains the state as an instance property instance variable**
+    * state is **passed as constructor param or set by default**
+    * in Strategy, it is **passed as arg to the method**
