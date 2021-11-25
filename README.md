@@ -670,6 +670,7 @@ Con
     * lots of little objects can be hard to debug 
     
 ### 5. Facade Pattern
+* Not implemented
 * What:
     * Pattern provides a unified interface to a set of interfaces in a sys
     * Defines a high level interface making sub-sys easier to use
@@ -875,3 +876,10 @@ vs State Pattern
 * In State, Context **contains the state as an instance property instance variable**
     * state is **passed as constructor param or set by default**
     * in Strategy, it is **passed as arg to the method**
+    
+    
+### 14. Template Design Pattern
+Template defines the skeleton of the step by step method calls that are need (algo)
+    * helps us generalized a common process at **abstraction level**
+    * template === just method calls in abstract class method 
+    * software reuse if the fundamental goal of this method
