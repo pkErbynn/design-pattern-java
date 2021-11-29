@@ -883,3 +883,20 @@ Template defines the skeleton of the step by step method calls that are need (al
     * helps us generalized a common process at **abstraction level**
     * template === just method calls in abstract class method 
     * software reuse if the fundamental goal of this method
+    
+### 15. Visitor Design Pattern
+* Visitor's major focus is to **separate out certain logic from the elements/ pojo classes themselves** keeping data classes simple
+    * allows **add operations to a collection (Composite structure) without changing the collection itself**
+        * easy to add operations that depends on components of collections (complex objects)
+        * can define a new operation over an object class by adding a new Visitor
+            * eg: if there is an arraylist and has methods, it will never be affected...cus new method is added to the item itself
+            * eg: calculating the total cost of items in a collection,  
+                * logic is normally put in item classes normally, but will needs to be moved out to another class using the Visitor pattern 
+                    * a class called Visitor will visit each item, take the object, add the logic and then return a value;
+* core part is the Visitor Interface
+    * defines a visit operation for each type of concrete element
+* the pojo interface simply defines an **accept** method allowing visitor to run some action on that pure pojo class element
+
+drawback
+* the return type of visit() methods should be known at the time of designing
+* if Visitor interface have too many implementations, it makes it diff to extend
