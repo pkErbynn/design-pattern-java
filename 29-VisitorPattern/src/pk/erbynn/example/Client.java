@@ -1,7 +1,7 @@
 package pk.erbynn.example;
 
 // Domain: Simulation of online Shopping Cart where items will be picked
-// and the total cost of the items will be calculated
+// and the total cost of items is calculated
 // and done using the Visitor pattern - where logic for cost calculation is moved to another class
 // making it loosely coupled
 
