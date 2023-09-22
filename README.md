@@ -275,8 +275,9 @@ Another design principle which deals with using 'has-a' relationship over 'is-a'
     * can exist separately
     * eg - students in a class (get rid of class and the student still exist), tires on a car (tire can be taken off and be installed on different ones )
 * Vs = composition's child life is completely controlled by the parent unlike aggregation
+* **NB: Use Composition or Delegation instead of Inheritance unless you want substitutability...cus Inheritance demands more from the developer than Composition/Delegation does**
 * Why Composition over Inheritance
-    1. help keep each class encapsulated and focused on one task. keeps class hierarchies small preventing them grow into unmanageable monsters
+    1. help keep each class encapsulated and focused on one task. keeps class hierarchies small preventing them from growing into unmanageable monsters
     2. inheritance breaks encapsulation since subclasses heavily depend on the parent/base class behavior
         * changes in super class, may break sub class's behavior
         * inheritance = tightly coupled...composition = loosely coupled
@@ -343,20 +344,22 @@ eg of responsibilities
 * mapping
 * class instantiation 
 
-##### Open Close Principle
+##### Open Close Principle (OCP)
 Classes and methods should be Open for extension(new funtionality) and Close for modification
 * class should be easily extendable without modifing the class itself
 * code that new functionality can be added without changing existing code
-* "the most important principle of oop design"
+* "**the most important principle of oop design"**
+* achieved through abstraction and polymorphism
 Aims: prevents touching dependency while changing code + reduces tight coupling 
  
-##### Liskov Substitution Principle
+##### Liskov Substitution Principle (LSP)
 States that object of a superclass can be replaceable with objects of its subclasses without breaking the application
 * requires that methods which uses superclass type must be able to work with the subclass without any issue
 * LSP is closely related to the Single responsibility principle
 * related to the open/close principle 
 
 How to fix?: through inheritance
+* **NB: Inheritance should be used only for substitutability**
  
 ##### Interface Segregation Principle
 Client should not be forced to implement an interface if there exist a method they do not use
@@ -378,9 +381,10 @@ Higher level classes must not depend directly on lower level classes
     * ie, from top-to-bottom level, with bottom-to-top with abstraction
 
 Similar to "Program to an Interface, not an actual implementation"
-    * IDP makes stronger emphasis on abstraction
+    * IDP places stronger emphasis on abstraction
   
-It's the **central underlying principle** in design pattern   
+It's the **central underlying principle** in design pattern
+> This principle helps achieve the Open-Close Principle
  
 ##### Dependency Injection Principle
 A class, A has a **dependency** on another class, B, if class A uses an instance of class B.
