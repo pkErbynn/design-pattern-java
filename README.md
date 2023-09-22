@@ -381,9 +381,10 @@ Higher level classes must not depend directly on lower level classes
     * ie, from top-to-bottom level, with bottom-to-top with abstraction
 
 Similar to "Program to an Interface, not an actual implementation"
-    * IDP makes stronger emphasis on abstraction
+    * IDP places stronger emphasis on abstraction
   
-It's the **central underlying principle** in design pattern   
+It's the **central underlying principle** in design pattern
+> This principle helps achieve the Open-Close Principle
  
 ##### Dependency Injection Principle
 A class, A has a **dependency** on another class, B, if class A uses an instance of class B.
