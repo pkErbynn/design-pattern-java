@@ -446,6 +446,7 @@ Documentation that describes the design pattern
 NB: Cover the implementation before the theory
 
 ## Design Patterns
+- Illustrative story - https://www.linkedin.com/posts/nelsonamigoscode_systemdesign-coding-interviewtips-activity-7110525568839753728-4d3M?utm_source=share&utm_medium=member_desktop
 
 ======= Creational ========
 ### 1. Factory Method
