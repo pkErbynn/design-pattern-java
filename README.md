@@ -162,8 +162,9 @@ Organization by Scope (whether classes or objects)
     * helps put focus on how objects are interconnected than the control flow
         * eg. Iteration of items
 * concerned with algorithms and which object is assigned a task
-    * behavioral class patterns uses _inheritance_ to describe algorithms and flow of control
-    * behavioral object patterns uses _composition_ to describe how group of objects cooperate to perform a single task that no single object can do it alone
+* has 2 types
+    * behavioral class patterns: uses _inheritance_ to describe algorithms and flow of control
+    * behavioral object patterns: uses _composition_ to describe how group of objects cooperate to perform a single task that no single object can do it alone
 * terms: loosely coupled => less dependencies, easy to maintain, change to one doesn't affect another...cohesive => relate to responsibility, focus of an object. highly cohesive object is one with many responsibilities/doing too many things. difficult to modify, fix bug and maintain 
 * made  of **11 patterns**:
     1. Chain of Responsibility
@@ -710,3 +711,26 @@ Advantages and Drawbacks
 
 ### 7. Proxy Pattern
 This pattern provides a rep for another object in order to control the client's access to it
+
+### Adapter vs Bridge
+* bot promote flex by providing a level of abstraction
+* but 
+    - adapter focuses on resolving incompatibilities b/n two existing classes/interfaces
+        - makes things work after design
+    - bridge focuses on bridging an abstraction and its(potential numerous) implementations, providing stable interface to client to vary implementations
+        - used upfront when abstractions must have several implementations
+### Composite vs Decorator
+* decorator: adds responsibility to object without subclassing
+* composite: treats multiple related objects uniformly as one
+
+
+### 8. Chain of Responsibility
+* this pattern avoids coupling the sender of a request to its receiver by giving more than one object a chance to handle request
+    * chains the receiving obj and pass the request along the chain until an obj handles it
+* processes series of object one by one (in a sequential manner)
+
+how
+* after one process is done, if anything is still pending, it is forwarded to the next object in the chain
+    * each receiver contains a reference to another receiver
+
+TODO: challenge implementation
