@@ -860,6 +860,7 @@ why?
 Strategy defines a family of algorithms that are interchangeable
 * conceptually, these algos do same things with diff implementations
 * behaviour of algo is selected dynamically at runtime
+* encapsulate **each algorithm into separate class**
 * client app **passes the algo to be used as a parameter**
 * achieved through polymorphism
 
