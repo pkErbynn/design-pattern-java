@@ -858,13 +858,13 @@ why?
 
 ### 14. Strategy Design Pattern
 Strategy defines a family of algorithms that are interchangeable
-    * conceptually, these algos do same things with diff implementations
-    * behaviour of algo is selected dynamically at runtime
-    * client app **passes the algo to be used as a parameter**
-    * achieved through polymorphism
+* conceptually, these algos do same things with diff implementations
+* behaviour of algo is selected dynamically at runtime
+* client app **passes the algo to be used as a parameter**
+* achieved through polymorphism
 
 Object are created representing the various strategies + context object whose behaviour varies as per its strategy object
-    * the strategy obj changes the executing algo of the context obj
+* the strategy obj changes the executing algo of the context obj
 
 When?
 * used when need to configure many behaviours for a class, thus diff variants in algo
