@@ -23,29 +23,29 @@ Instructor: Jason Fedin
     * class diagrams
     * object-oriented concepts in UML (inheritance, interfaces, composition, annotation)
 * Creational DP
-    * Factory
-    * Abstract Factory
-    * Singleton
+    * Factory Method *
+    * Abstract Factory *
+    * Singleton *
     * Builder
     * Prototype
 * Structural DP
-    * Adaptor
+    * Adaptor *
     * Bridge
     * Composition
-    * Decorator (Sub-classing)
-    * Facade
+    * Decorator (Sub-classing) *
+    * Facade 
     * Flyweight
-    * Proxy
+    * Proxy *
 * Behavioral DP
-    * Chain of Responsibility
+    * Chain of Responsibility *
     * Command
     * Interpreter
     * Iterator
     * Mediator
     * Momento
-    * Observer
+    * Observer *
     * State
-    * Strategy
+    * Strategy *
     * Template Method
     * Visitor 
 * Includes...
