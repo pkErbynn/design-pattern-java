@@ -1,0 +1,1 @@
+![singleton](../../assets/singleton.png)
