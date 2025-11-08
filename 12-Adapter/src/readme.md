@@ -1,0 +1,1 @@
+![singleton](../../assets/adaptor.png)

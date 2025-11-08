@@ -483,6 +483,7 @@ NB: Cover the implementation before the theory
 * a creational pattern
 * example
     * logging service
+* con: requires special treatment in multithreaded env so that multiple threads won't create singleton object several times
 
 ### 4. Builder Pattern
 * creational pattern
@@ -650,6 +651,7 @@ what?
     * provides a flex alternative to subclassing for extending functionality
     * modifies functionality of an object at runtime
     * decorator adds responsibilities to individual objects, not to an entire class
+    * attaches additional behaviors to object by placing these objects inside several wrapper objects that contain the behaviors
 
 When to use?
 * adding new functionality to an existing object without altering its structure/functionality
