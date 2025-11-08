@@ -651,10 +651,16 @@ what?
     * provides a flex alternative to subclassing for extending functionality
     * modifies functionality of an object at runtime
     * decorator adds responsibilities to individual objects, not to an entire class
-    * attaches additional behaviors to object by placing these objects inside several wrapper objects that contain the behaviors
-
+    * attaches additional behaviors to object at runtime by placing these objects inside several wrapper objects that contain the behaviors
+* Pros:
+    * can extend object's behavior without making a new subclass
+    * can combine several behaiours
+* Cons:
+    * hard to remove specific wrapper from the wrapper stack
+    * initial config code of layers might look pretty ugly
 When to use?
 * adding new functionality to an existing object without altering its structure/functionality
+* when it's not possible to extend object's behaviour using inheritance
 
 Example:
 * suppose adding a new floor to already owned house
@@ -816,6 +822,7 @@ Observer design pattern defines a one-to-many relationship b/n objects so that w
     * notify-ers and notify-ees are decoupled
         * more flex with requirement change
     * mostly used pattern
+    * if no subs exist, don't publish even when event happens
 
 How?
 * many observers(objects) which are observing a particular subject(objects)
@@ -833,6 +840,9 @@ Examples:
 When To Use:
 * when a change in one object requires changing others, do not know the numbers object to be changed/updated
 * when an object should be able to notify other objects without making assumptions about who these objects are
+
+Lang Specific:
+* In some lang like C#, delegates stores list of sub/unsubs
 
 
 ### 14. State Design Pattern
