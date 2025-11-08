@@ -1,3 +1,5 @@
+![Decorator](../assets/decorator2.png)
+
 ## Russian Doll
 ![Decorator](../assets/decorator.png)
 
